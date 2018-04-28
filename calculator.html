@@ -2,17 +2,21 @@
 			<html lang="en-US">
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 			<script src= "calculator.js"></script>
+
 			<head>
 				<title>Calculator Demo</title>
 				<meta charset="utf-8">
 				<meta name="viewport" content="width=device-width, initial-scale=1">
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+				<link rel="stylesheet" type="text/css" href="calculator.css">
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 			</head>
 			<body>
+}
 
 				<div class="container">
 					<h2>Calculator Demo</h2>
+					<br>
 					<div ng-app="CalculatorApp" ng-controller="CalculatorController">
 						<form calcuratorForm>
 							<div class="form-group">
@@ -20,7 +24,7 @@
 								Enter the first operand
 								<input type="number" ng-model="operand1" class="form-control">
 							</div>
-							<div class="form-group">
+							<div class="form-group" id="op2">
 								Enter the second operand
 								<input type="number" ng-model="operand2" class="form-control">
 							</div>
@@ -31,6 +35,7 @@
 									<option>*</option>
 									<option>-</option>
 									<option>/</option>
+									<option>^</option>
 								</select></p>
 							</div>
 							<div class = "row centered-form center-block">
